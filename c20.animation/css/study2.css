@@ -30,13 +30,6 @@ body{
 
     inset:0;
 
-    background-image:
-        radial-gradient(white 1px,transparent 1px),
-        radial-gradient(white 2px,transparent 2px);
-
-    background-size:
-        120px 120px,
-        260px 260px;
 
     opacity:.8;
 
