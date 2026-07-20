@@ -19,6 +19,9 @@
 .rotate{
     animation:myrotate 2s linear 0s infinite normal;
 }
+.rotate:hover{
+    animation-play-state: paused;
+}
 
 @keyframes myrotate {
     0%{transform: rotate(0deg);}
