@@ -23,13 +23,13 @@
 }
 .filter img{transition:all 1s ease 0s;}
 .filter:hover img{
-    filter: brightness(0.6);
+    filter: blur(20px)brightness(0.7);
 }
 .filter{
     position: relative;
-    border:1px solid red;
     width:400px;
     aspect-ratio: 2/3;
+    overflow: hidden;
 }
 .filter img{
     width:100%;
@@ -37,11 +37,12 @@
     object-fit: cover;
 }
 .filter figcaption{
+    background-color: gold;
+    mix-blend-mode:overlay;
     position: absolute;
     /* left:50%;
     top:50%;
     transform: translate(-50%,-50%); */
-    border:1px solid lime;
     left:0;
     top:0;
     width:100%;
