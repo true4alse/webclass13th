@@ -44,3 +44,31 @@ figure.coffee img{
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+@media (max-width:1650px){
+    .wrap{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+
+@media (max-width:1024px){
+    html{
+        font-size:18px;
+    }
+    figure.coffee img{
+        height:350px;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size:14px;
+    }
+    .wrap{
+        margin:0 1rem;
+    }
+    figure.coffee img{
+        height:200px;
+    }
+}
