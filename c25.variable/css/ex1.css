@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --primary-color: #5b63d3;
+    --primary-dark: #4048ad;
+    --primary-light: #eef0ff;
+    --accent-color: #ffb84d;
+    --text-color: #25283d;
+    --muted-color: #73778c;
+    --line-color: #e7e8f1;
+    --white: #ffffff;
+    --shadow: 0 20px 50px rgba(56, 62, 130, 0.16);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255, 184, 77, 0.2), transparent 28%),
+        radial-gradient(circle at 85% 80%, rgba(91, 99, 211, 0.18), transparent 30%),
+        #f5f6fc;
+}
+
+table {
+    width: min(100%, 520px);
+    overflow: hidden;
+    border-spacing: 0;
+    border: 1px solid rgba(91, 99, 211, 0.12);
+    border-radius: 0px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+caption {
+    padding: 30px 24px 25px;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+th,
+td {
+    padding: 17px 28px;
+    border-bottom: 1px solid var(--line-color);
+    font-size: 16px;
+}
+
+th {
+    width: 42%;
+    color: var(--muted-color);
+    font-weight: 600;
+    text-align: left;
+    background-color: #fafaff;
+}
+
+td {
+    font-weight: 700;
+    text-align: right;
+}
+
+tr:hover th,
+tr:hover td {
+    background-color: var(--primary-light);
+}
+
+tr:first-of-type th,
+tr:first-of-type td {
+    color: var(--primary-dark);
+    font-size: 18px;
+}
+
+tr:nth-last-child(-n + 2) th,
+tr:nth-last-child(-n + 2) td {
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+}
+
+tr:nth-last-child(2) th,
+tr:nth-last-child(2) td {
+    border-top: 2px solid rgba(91, 99, 211, 0.2);
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: 0;
+}
+
+tr:last-child td {
+    color: var(--white);
+    font-size: 18px;
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px 14px;
+    }
+
+    table {
+        border-radius: 16px;
+    }
+
+    caption {
+        padding: 24px 18px 20px;
+        font-size: 21px;
+    }
+
+    th,
+    td {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+}
