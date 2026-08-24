@@ -59,6 +59,7 @@ header{
     background-color: #fff;
 }
 .gnb{
+    font-weight: bold;
     display: flex;
     height:50px;
     overflow: hidden;
