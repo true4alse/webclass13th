@@ -1,13 +1,13 @@
 *{margin:0;padding:0;}
 
 .station{
-    width:1000px;
+    width:1200px;
     height:600px;
     border:1px solid black;
     overflow: hidden;
 }
 .train{
-    width:400%;
+    width:500%;
     height:100%;
     transition: all 0.8s ease 0s;
     display: flex;
