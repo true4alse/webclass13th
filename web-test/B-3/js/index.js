@@ -17,3 +17,16 @@ setInterval(()=>{
     if(count>2){count=0}
     train.style.transform = `translateY(${-33.333*count}%)`;
 },2500);
+
+
+const tabs = document.querySelectorAll('.tabs>a');
+const tabContents = document.querySelectorAll('.tab-contents>ul');
+
+tabs.forEach((atag,index)=>{
+    atag.addEventListener('click',()=>{
+        tabs.forEach(a=>a.classList.remove('on'));
+        atag.classList.add('on');
+        tabContents.forEach(ul=>ul.classList.remove('on'));
+        tabContents[index].classList.add('on');
+    });
+});

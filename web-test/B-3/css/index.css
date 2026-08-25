@@ -134,3 +134,25 @@ footer .inner-frame{
 .logo-foot{
     line-height: 0;
 }
+
+.tabs{
+    display: flex;
+    margin-bottom: 10px;
+}
+.tabs a{
+    padding:4px 12px;
+}
+.tabs a.on{
+    background-color: #000;
+    color:#fff;
+}
+
+.tab-contents ul{
+    display: none;
+}
+.notice.on{
+    display: block;
+}
+.gal.on{
+    display: flex;
+}
