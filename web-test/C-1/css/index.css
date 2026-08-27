@@ -59,11 +59,14 @@ header{
     transition:all 0.5s ease 0s;
     height: 300px;
     opacity: 0;
+    height:0;
+    overflow: hidden;
     pointer-events: none;
 }
 .gnb>li:hover ul{
     opacity: 1;
     pointer-events: auto;
+    height:300px;
 }
 .gnb li:hover>a{
     background-color: #333;
