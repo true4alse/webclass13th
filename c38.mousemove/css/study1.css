@@ -1,0 +1,8 @@
+.mouseCursor{
+    width:100px;
+    height:100px;
+    position: fixed;
+    left:0;
+    top:0;
+    border:1px solid red;
+}
