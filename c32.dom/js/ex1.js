@@ -30,13 +30,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     btnToggle.addEventListener('click',function(){
         if(!btnState){
             // 이미지를 닫기 이미지로 교체
-            this.children[0].setAttribute('src','./img/close.svg');
-            this.children[0].setAttribute('alt','닫기');
+            this.children[0].setAttribute('src','./img/close.svg').setAttribute('alt','닫기');
             btnState = true;
         }else{
             // 이미지를 메뉴 이미지로 교체
-            this.children[0].setAttribute('src','./img/menu.svg');
-            this.children[0].setAttribute('alt','메뉴');
+            this.children[0].setAttribute('src','./img/menu.svg').setAttribute('alt','메뉴');
             btnState = false;
         }
     });
